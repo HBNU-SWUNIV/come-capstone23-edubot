@@ -33,7 +33,7 @@
 ## 패치노트
 ### 미완성 더 추가예정
 
-3/19
+### 3/19
 AI 백엔드 자동화 학습
 
 1. 학생들이 질문한 내용이 google spread sheet로 들어간다.
@@ -56,7 +56,7 @@ ai 학습에는 어짜피 excel로 만들어진 답변 데이터가 있고, ai �
 그럼 학생질문 350개 우리 대답 350개 매주 700개 데이터 학습
 
 
-4/3 - 학생 질문 리스트를 엑셀파일로 출력해주는 기능 추가
+### 4/3 - 학생 질문 리스트를 엑셀파일로 출력해주는 기능 추가
 *main파일이 있는 pythonProject파일안에 n주차 데이터.xlsx 파일을 넣어주면됨.
 
 작동 원리는 사용자가 학생 질문 리스트를 보려고 입력하면(/sqd)
@@ -99,10 +99,10 @@ student_querydata = CommandHandler('sqd', studentquerydata)
 dispatcher.add_handler(student_querydata)
 
 
-4/4 실제 코드에 넣음
+### 4/4 실제 코드에 넣음
 - 깃허브 등록할때 저장하고 등록해야 됨
 
-4/6 학생들에게 시험문제를 제공할 때 그냥 답을 알려주는게 아닌 서로 상호작용 하는 형식의 알고리즘을 생각해봐야함. 
+### 4/6 학생들에게 시험문제를 제공할 때 그냥 답을 알려주는게 아닌 서로 상호작용 하는 형식의 알고리즘을 생각해봐야함. 
 
 1. 학생들이 퀴즈 데이터를 물어본다.
 2. 문제가 별로 안되기때문에 문제당 유형을 물어본다.
@@ -138,55 +138,12 @@ def reportdata(update, context)-> None:
 report_data = CommandHandler('report', reportdata)
 dispatcher.add_handler(report_data)
 
-4/6 학생들에게 시험문제를 제공할 때 그냥 답을 알려주는게 아닌 서로 상호작용 하는 형식의 알고리즘을 생각해봐야함. 
+context.bot.send_message(chat_id=chat_id, text="안녕하세요, 한밭대학교 교육용 챗봇입니다.\n" \
+                "현재 다음 기능을 제공하고 있습니다.\n" \
+                "1.과제 제출(질문) - /soa \n2.수업 질의응답 - /aqa\n3.챗봇 문제풀기 - /chattest\n4.질문 리스트 보기 - /sqd\n5.챗봇 사용에 불편한점을 기록해주세요- /report\n" \
+                "\n 커맨드를 입력해주시거나 클릭해주세요.")
 
-1. 학생들이 퀴즈 데이터를 물어본다.
-2. 문제가 별로 안되기때문에 문제당 유형을 물어본다.
-3. 예를들어 퀴즈 4번에 대해 알려줘 물어본다면, 어떤게 막히시나요? 이런 문구를 출력
-4. 그 퀴즈에 대한 힌트( 버튼을 추가해서 하는 형식?)으로 원하는 내용을 물어본다.
-5. 바로 답을 해주는 형식이 아닌, 상호작용하면서 하는 형식으로 힌트를 제공한다.
-6. 답은 그래도 모르겠어요 라고 5번 이상 들어온다면 알려주는게 좋을듯
-
-학생들에게 피드백을 받는 기능을 만들었다.
-데이터베이스는 chatid랑 type으로 만들어서 데이터가 들어간다.
-
-def reportdata(update, context)-> None:
-    user = update.message.from_user
-    chat_id = update.message.chat_id
-    user_text = update.message.text
-    context.bot.send_message(chat_id=chat_id,
-                             text="챗봇을 이용하시면서 불편하신 내용을 적어주세요\n 적어주신 피드백을 기반으로 챗봇을 유지보수 하려고 합니다. \n\n다른기능을 사용하고 싶으시면 /help를 입력해주세요")
-    global NUM
-    N_UM = 6
-    context.bot.send_message(chat_id=chat_id, text="피드백을 [] 안에 적어주세요")
-
-
-    elif NUM == 6:
-        idx = user_text.find(']')
-        type = user_text[1:idx]
-        sql = "INSERT INTO dataset(chatid ,type) VALUES (%s, %s)"
-        cursor.execute(sql, (chat_id, type))
-        context.bot.send_message(chat_id=chat_id, text="피드백 제출이 완료되었습니다. 감사합니다.")
-        db.commit()
-        db.close() 
-
-
-report_data = CommandHandler('report', reportdata)
-dispatcher.add_handler(report_data)
-
-
-    context.bot.send_message(chat_id=chat_id, text="안녕하세요, 한밭대학교 교육용 챗봇입니다.\n" \
-                  "현재 다음 기능을 제공하고 있습니다.\n" \
-                  "1.과제 제출(질문) - /soa \n2.수업 질의응답 - /aqa\n3.챗봇 문제풀기 - /chattest\n4.질문 리스트 보기 - /sqd\n5.챗봇 사용에 불편한점을 기록해주세요- /report\n" \
-                  "\n 커맨드를 입력해주시거나 클릭해주세요.")
-
-    context.bot.send_message(chat_id=chat_id, text="안녕하세요, 한밭대학교 교육용 챗봇입니다.\n" \
-                  "현재 다음 기능을 제공하고 있습니다.\n" \
-                  "1.과제 제출(질문) - /soa \n2.수업 질의응답 - /aqa\n3.챗봇 문제풀기 - /chattest\n4.질문 리스트 보기 - /sqd\n5.챗봇 사용에 불편한점을 기록해주세요- /report\n" \
-                  "\n 커맨드를 입력해주시거나 클릭해주세요.")
-
-
-4/17 중간고사 문제제출 챗봇 개발중(examserver)
+### 4/17 중간고사 문제제출 챗봇 개발중(examserver)
     현재 구현된 기능으로는 /다음, /이전, /제출하기이다.
     /start를 눌러 시작하면 infomessage를 출력해주고, /다음을 입력하여 문제를 풀게 시작한다.
 
@@ -197,7 +154,7 @@ dispatcher.add_handler(report_data)
     현재 asyncio 기능을 제외한 나머지는 테스트까지 끝마친 상태이다.
     
 
-4/24 변경점
+### 4/24 변경점
     create_traindata : 기존 ai학습 데이터지움
     intentmodel : 123이 번호 과제 등으로 고정되어있었기 떄문에 바꿈
     FindAnswer : 이제 의도분류모델과 키워드 추출을 둘다 사용하게 바꿈
@@ -229,11 +186,11 @@ dispatcher.add_handler(report_data)
     
     인터넷에서 cnn학습시킨 방향과 비교해서 고쳐나가야함
 
-4/25 main에 user_num rand_cluser 추가
+### 4/25 main에 user_num rand_cluser 추가
     각자 개인의 전역변수를 사용해서 문제를 풀고, 명령어가 각자 개인 전역변수로 들어가서 오류가 발생하지않게 수정함
 
 
-5/2 중간고사 이후 챗봇
+### 5/2 중간고사 이후 챗봇
 
     1. create_dic으로 단어사전 새로 생성( 새로운 단어가 추가되었을 경우 사용 googlespreadsheet 데이터와 기존 aihub데이터로 사전생성) * 자주 안해도됨 *
     2. capstone_question_data 엑셀에 추가한 내용 다운받고 csv파일로 저장한후 googledrive에 넣기
@@ -244,14 +201,14 @@ dispatcher.add_handler(report_data)
     6. create_traindata를 안쓰는 방식 수정해야함
     7. 현재 문재점은 create_cnn을 사용하면 train_data값이 바뀜 
 
-5/3 추가한 내용 
+### 5/3 추가한 내용 
     1. create_cnn을 실행시킨다.
         1. create_traindata가 먼져 실행되어 새로 추가된 학습데이터로 train_data.csv를 새로 생성한다. (통합본데이터.csv도 생성)
     2. create_cnn에서 생성된 train_data.csv와 user_dic, chatbat2_dic (사전들) 과 cnn(intent_model.h5)을 새로 생성한다.
     기존 문제점 1 학습시키고 create_data가 들어옴
     create_data를 먼져해서 train_data를 만들어야 됨
 
-5/5 수정사항
+### 5/5 수정사항
 	IntentModel - traindata생성용.xlsx에서 인텐트를 뽑아서 자동으로 생성해줌
 	creat_traindata - 엑셀데이터에서 자동으로 라벨과 인텐트 텍스트를 출력해서 뽑음 
 	= 코드 수정할 필요 없음
@@ -280,7 +237,7 @@ dispatcher.add_handler(report_data)
 	*얘를 맨마지막에 해야 기존에 업데이트한 내용들이 등록됨*
 
 
-5/21 변경점
+### 5/21 변경점
         pyevsim을 사용하여 자동화 한 목록(기존 예약 키워드 사용X)
         1. 화요일 00:00에 데이터베이스에 저장된 학생들의 질문리스트가 Googlespreadsheet에 전송
         2. 수요일 00:00에 학생들의 질문데이터로 만든 문제들을 데이터베이스에 저장
@@ -290,7 +247,7 @@ dispatcher.add_handler(report_data)
         4. 기존 /aqa에서 질의응답업로드 키워드를 입력해서 챗봇을 업데이트 시켰던 방법을 pyevsim을 활용하여 완전 자동화를 할 예정
 
 
-5/22 변경점
+### 5/22 변경점
     추가내용 : pyevsim을 활용한 완전 자동화
 
     기존의 챗봇 업데이트는 예약 메세지 기능 및 챗봇에서 메세지(키워드)를 보내서 직접 학습을 시켜야하는 단점이 있었음
@@ -309,7 +266,7 @@ dispatcher.add_handler(report_data)
     --> 이부분도 구글드라이브 폴더를 만들어서 원격으로 자동화 할 예정
 
 
-5/29 변경점
+### 5/29 변경점
     기존의 pyevsim을 사용하여 완전자동화를 하는 과정에서 데이터를 뽑는 과정에서 날짜 오류가 발생해서 이부분을 수정했습니다.
 
     추가예정 : pyevsim을 현재 1분당 한번실행하는데 이 방법은 너무 낭비를 심하게 하는 부분임 -> 4개로 나눠서 일주일에 시간에 맞게 한번씩 실행하는 방향으로 수정하기
