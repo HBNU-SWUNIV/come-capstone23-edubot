@@ -16,7 +16,7 @@ print(star_pattern)
 """
 
 # POST 요청 보내기
-response = requests.post(url, json={"code12": code})
+response = requests.post(url, json={"code": code})
 
 # 응답 출력하기
 print(response.json())
