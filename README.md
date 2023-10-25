@@ -329,3 +329,8 @@ context.bot.send_message(chat_id=chat_id, text="안녕하세요, 한밭대학교
 	해결 : 데이터베이스에 Transient를 사용하여 Description을 저장하지않고, 텍스트파일로 남겨서 저장시킴
 	
 	아마 문자열 길이 255를 넘었기 때문이다. 생각보다 길었음
+
+ ## 추가 개선안
+
+기존의 온라인 저지 서버는 flask api 서버를 사용했는데, 이 방식보단 fast api (비동기 처리) 방식의 서버로 변환하여 조금 더 개선했다.
+
