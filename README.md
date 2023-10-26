@@ -15,19 +15,50 @@
   
 ## System Design
   - ### System Requirements
-    - 
-    - 
-    
-## Case Study
-  - ### Description
+    - 사용자가 챗봇에 파이썬 이론에 관한 질문을 하면 답변된 Q&A 데이터에서 적절한 답변을 추출 후 답변 
+    - 모바일, 웹 환경 모두 챗봇 환경 지원
+    - 파이썬 코딩 실습 환경 제공을 위한 온라인 저지 구축
+
+  - ### System Architecture
+  ![KakaoTalk_Photo_2023-10-26-16-41-18](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/5b9ccb66-777f-46f7-8e8e-327d22cf2420)    
   
+## 💻 Tech Stack
+<h4> Platforms & Languages </h4>
+
+<div align="left">
+	<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+    <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+    <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+    <img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
+    <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+    <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+    <img src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white">
+	
+</div>
+
+<h4> Tools </h4>
+<div align=left>
+	<img src="https://img.shields.io/badge/Intellij%20IDE-000000?style=flat&logo=intellijidea&logoColor=white" />
+	<img src="https://img.shields.io/badge/PyCharm-000000?style=flat-square&logo=PyCharm&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/>
+	<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white" />
+</div>
   
 ## Conclusion
-  - ### OOO
-  - ### OOO
+  - 컴퓨터공학과 1학년 파이썬 수업에서 학생들에게 질문을 받아 답변해주며 5000개 이상의 Q&A 데이터를 확보하고 모델 학습에 사용함
+  - 학생들은 시공간의 제약 없이 각자의 학습 속도와 이해 수준에 맞게 질문을 할 수 있게 되었고, 원하는 질문에 대한 답을 얻을 수 있게 되었음
+  - 해당 챗봇 시스템은 프로그래밍 수업뿐만 아니라 다양한 학습 환경에서 유용하게 활용될 수 있음
+  - 모바일, 웹 환경 모두 사용이 가능하며 웹에서는 간단한 온라인저지를 통해 간단한 코딩 실습 공간으로 이용 가능
   
 ## Project Outcome
-- ### 2023 년 한국전기전자학회 학술대회
+- ### 2023년 한국전기전자학회 학술대회
+<img width="638" alt="스크린샷 2023-10-26 오후 4 31 51" src="https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/67837f59-04ab-4a13-b096-5e854e31b133">
+
+- ### App, Web
+![mobile](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/fa8bae85-7c38-4b3c-97be-2ca8d8019da3)
+<img width="1107" alt="KakaoTalk_Photo_2023-10-25-16-42-20" src="https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/eb7e4784-8b12-4389-bff1-894d8fcf6869">
+<img width="1109" alt="KakaoTalk_Photo_2023-10-25-16-42-13" src="https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/0d2b8b07-4c57-404e-9f89-caa50bd59ddf">
+
 
 
 ## 패치노트
@@ -305,7 +336,7 @@ context.bot.send_message(chat_id=chat_id, text="안녕하세요, 한밭대학교
  
 
 ### 채팅방 
-	1학기때 학생들상대로 질문을 수집하여 만든 파이썬 모델을 사용하여 질문과 답변을 하는 채팅방
+	1학기때 학생들 상대로 질문을 학습시켜 만든 파이썬 모델을 사용하여 질문과 답변을 하는 채팅방
 
 
 ### 온라인저지 기능
