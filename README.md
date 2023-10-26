@@ -20,7 +20,7 @@
     - 파이썬 코딩 실습 환경 제공을 위한 온라인 저지 구축
 
   - ### System Architecture
-  ![KakaoTalk_Photo_2023-10-26-16-41-18](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/5b9ccb66-777f-46f7-8e8e-327d22cf2420)    
+  ![image01](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/628faea1-c0f2-4cf9-a609-44d634dfeb75)   
   
 ## 💻 Tech Stack
 <h4> Platforms & Languages </h4>
