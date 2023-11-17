@@ -19,9 +19,12 @@
     - 모바일, 웹 환경 모두 챗봇 환경 지원
     - 파이썬 코딩 실습 환경 제공을 위한 온라인 저지 구축
 
-  - ### System Architecture
+  - ### Web System Architecture
   ![image01](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/628faea1-c0f2-4cf9-a609-44d634dfeb75)   
-  
+
+  - ### App System Architecture
+
+
 ## 💻 Tech Stack
 <h4> Platforms & Languages </h4>
 
