@@ -21,6 +21,8 @@
 
   - ### Web System Architecture
   ![image01](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/628faea1-c0f2-4cf9-a609-44d634dfeb75)   
+  ![Web_system_flowchart](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/f4d5e774-1ff2-49dc-88ae-8e5ad390fc22)
+
 
   - ### App System Architecture
 ![App_System_configuration_diagram](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/945be4b0-0c41-47d9-b589-6216eed6b14f)
