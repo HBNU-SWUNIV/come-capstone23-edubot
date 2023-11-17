@@ -20,6 +20,7 @@
     - 파이썬 코딩 실습 환경 제공을 위한 온라인 저지 구축
    
   ![q a_data](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/8e3f09f3-fc09-4cbe-bfe0-40ab9b0cb6ca)
+  <img width="499" alt="서버_사용자_부하_테스트" src="https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/0441b2ae-096d-45c9-9ddf-7bc7cc1edf0b">
 
   - ### Web System Architecture
   ![image01](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/628faea1-c0f2-4cf9-a609-44d634dfeb75)   
@@ -29,6 +30,7 @@
   - ### App System Architecture
   ![App_System_configuration_diagram](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/945be4b0-0c41-47d9-b589-6216eed6b14f)
   ![App_system_flowchart](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/89ef0e2e-1c56-4bb1-be56-c58061bb7540)
+  ![과제제출_봇](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/a3e68845-9f46-4f54-881f-bdb18ad8d61c)
 
 
 ## 💻 Tech Stack
