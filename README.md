@@ -18,7 +18,7 @@
     - 사용자가 챗봇에 파이썬 이론에 관한 질문을 하면 답변된 Q&A 데이터에서 적절한 답변을 추출 후 답변 
     - 모바일, 웹 환경 모두 챗봇 환경 지원
     - 파이썬 코딩 실습 환경 제공을 위한 온라인 저지 구축
-    - 
+   
   ![q a_data](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/8e3f09f3-fc09-4cbe-bfe0-40ab9b0cb6ca)
 
   - ### Web System Architecture
