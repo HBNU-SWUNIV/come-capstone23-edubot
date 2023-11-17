@@ -25,7 +25,8 @@
 
 
   - ### App System Architecture
-![App_System_configuration_diagram](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/945be4b0-0c41-47d9-b589-6216eed6b14f)
+  ![App_System_configuration_diagram](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/945be4b0-0c41-47d9-b589-6216eed6b14f)
+  ![App_system_flowchart](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/89ef0e2e-1c56-4bb1-be56-c58061bb7540)
 
 
 ## 💻 Tech Stack
