@@ -18,18 +18,27 @@
     - 사용자가 챗봇에 파이썬 이론에 관한 질문을 하면 답변된 Q&A 데이터에서 적절한 답변을 추출 후 답변 
     - 모바일, 웹 환경 모두 챗봇 환경 지원
     - 파이썬 코딩 실습 환경 제공을 위한 온라인 저지 구축
-   
+
+   - ### 실제 챗봇 학습 데이터
   ![q a_data](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/8e3f09f3-fc09-4cbe-bfe0-40ab9b0cb6ca)
+
+   - ### 사용자 부하 테스트
   <img width="499" alt="서버_사용자_부하_테스트" src="https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/0441b2ae-096d-45c9-9ddf-7bc7cc1edf0b">
 
   - ### Web System Architecture
   ![image01](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/628faea1-c0f2-4cf9-a609-44d634dfeb75)   
+
+  - ### Web System Data Flow
   ![Web_system_flowchart](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/f4d5e774-1ff2-49dc-88ae-8e5ad390fc22)
 
 
   - ### App System Architecture
   ![App_System_configuration_diagram](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/945be4b0-0c41-47d9-b589-6216eed6b14f)
+
+  - ### App System Data Flow
   ![App_system_flowchart](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/89ef0e2e-1c56-4bb1-be56-c58061bb7540)
+
+  - ### 매주 수집한 학생데이터로 챗봇 자동 업데이트
   ![과제제출_봇](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/52690408/a3e68845-9f46-4f54-881f-bdb18ad8d61c)
 
 
@@ -65,9 +74,13 @@
 - ### 2023년 한국전기전자학회 학술대회
 <img width="638" alt="스크린샷 2023-10-26 오후 4 31 51" src="https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/67837f59-04ab-4a13-b096-5e854e31b133">
 
-- ### App, Web
+- ### App Telegram
 ![mobile](https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/fa8bae85-7c38-4b3c-97be-2ca8d8019da3)
+
+- ### Web ChatRoom 
 <img width="1107" alt="KakaoTalk_Photo_2023-10-25-16-42-20" src="https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/eb7e4784-8b12-4389-bff1-894d8fcf6869">
+
+- ### Web OnlineJudge
 <img width="1109" alt="KakaoTalk_Photo_2023-10-25-16-42-13" src="https://github.com/HBNU-SWUNIV/come-capstone23-edubot/assets/124351914/0d2b8b07-4c57-404e-9f89-caa50bd59ddf">
 
 
